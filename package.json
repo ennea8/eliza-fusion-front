@@ -1,5 +1,5 @@
 {
-    "name": "eliza-fusion-client",
+    "name": "eliza-fusion-front",
     "private": true,
     "version": "0.1.5-alpha.1",
     "type": "module",
