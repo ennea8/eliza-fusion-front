@@ -13,7 +13,7 @@ function Agents() {
     const { data: agents, isLoading } = useQuery({
         queryKey: ["agents"],
         queryFn: async () => {
-            const res = await fetch("/api/agents");
+            const res = await fetch(`${import.meta.env.VITE_API_URL}/agents`);
             const data = await res.json();
             return data.agents as Agent[];
         },

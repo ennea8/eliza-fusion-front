@@ -17,7 +17,7 @@ export default function Chat() {
 
     const mutation = useMutation({
         mutationFn: async (text: string) => {
-            const res = await fetch(`/api/${agentId}/message`, {
+            const res = await fetch(`${import.meta.env.VITE_API_URL}/${agentId}/message`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
