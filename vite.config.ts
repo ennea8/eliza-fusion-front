@@ -26,10 +26,10 @@ export default defineConfig({
     server: {
         proxy: {
             "/api": {
-                target:
-                    process.env.NODE_ENV === "production"
-                        ? process.env.VITE_API_URL
-                        : "http://localhost:3000",
+                target: "http://188.40.118.254:3000",
+                    // process.env.NODE_ENV === "production"
+                    //     ? process.env.VITE_API_URL
+                    //     : "http://localhost:3000",
                 changeOrigin: true,
                 rewrite: (path) => path.replace(/^\/api/, ""),
             },
